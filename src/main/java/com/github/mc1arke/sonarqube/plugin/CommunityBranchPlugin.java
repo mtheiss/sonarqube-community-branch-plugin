@@ -28,12 +28,7 @@ import com.github.mc1arke.sonarqube.plugin.scanner.ScannerPullRequestPropertySen
 import com.github.mc1arke.sonarqube.plugin.server.CommunityBranchFeatureExtension;
 import com.github.mc1arke.sonarqube.plugin.server.CommunityBranchSupportDelegate;
 import com.github.mc1arke.sonarqube.plugin.server.pullrequest.ws.AlmSettingsWs;
-import com.github.mc1arke.sonarqube.plugin.server.pullrequest.ws.action.CountBindingAction;
-import com.github.mc1arke.sonarqube.plugin.server.pullrequest.ws.action.DeleteAction;
-import com.github.mc1arke.sonarqube.plugin.server.pullrequest.ws.action.DeleteBindingAction;
-import com.github.mc1arke.sonarqube.plugin.server.pullrequest.ws.action.GetBindingAction;
-import com.github.mc1arke.sonarqube.plugin.server.pullrequest.ws.action.ListAction;
-import com.github.mc1arke.sonarqube.plugin.server.pullrequest.ws.action.ListDefinitionsAction;
+import com.github.mc1arke.sonarqube.plugin.server.pullrequest.ws.action.*;
 import com.github.mc1arke.sonarqube.plugin.server.pullrequest.ws.action.azure.CreateAzureAction;
 import com.github.mc1arke.sonarqube.plugin.server.pullrequest.ws.action.azure.SetAzureBindingAction;
 import com.github.mc1arke.sonarqube.plugin.server.pullrequest.ws.action.azure.UpdateAzureAction;
@@ -77,6 +72,7 @@ public class CommunityBranchPlugin implements Plugin, CoreExtension {
                                   AlmSettingsWs.class, CountBindingAction.class, DeleteAction.class,
                                   DeleteBindingAction.class, ListAction.class, ListDefinitionsAction.class,
                                   GetBindingAction.class,
+                                  ValidateAction.class,
 
                                   CreateGithubAction.class, SetGithubBindingAction.class, UpdateGithubAction.class,
 
